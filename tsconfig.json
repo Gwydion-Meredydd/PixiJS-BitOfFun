@@ -14,6 +14,7 @@
       // More info: https://www.snowpack.dev/guides/streaming-imports
     },
     "allowSyntheticDefaultImports": true,
+    
     "importsNotUsedAsValues": "error",
     /* more strict checking for errors that per-file transpilers like `esbuild` would crash */
     "isolatedModules": true,
