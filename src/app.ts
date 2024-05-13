@@ -29,22 +29,11 @@ export namespace PixiProject
 
         private async loadAssets()
         {
-            this.bunnyTexture = await PIXI.Assets.load('https://pixijs.com/assets/bunny.png');
         }
 
         private createComponents()
         {
-            const bunny = new PIXI.Sprite(this.bunnyTexture);
-            app.stage.addChild(bunny);
-            bunny.anchor.set(0.5);
 
-            bunny.x = app.screen.width / 2;
-            bunny.y = app.screen.height / 2;
-
-            app.ticker.add((time) =>
-            {
-                bunny.rotation += 0.1 * time.deltaTime;
-            });
         }
     }
 }
