@@ -20,8 +20,6 @@ export namespace PixiProject
 {
     export class Game
     {
-        private bunnyTexture!: PIXI.Texture;
-
         constructor()
         {
             this.loadAssets().then(() => this.createComponents());
